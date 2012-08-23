@@ -2,11 +2,12 @@
   /****************************************************************************
    *    Meta-information
    */
-  "name": "[EXTENSION NAME GOES HERE]",
-  "description": "[EXTENSION DESCRIPTION GOES HERE]",
+  "name": "Porn*",
+  "description": "Opens all domains tagged as Pornography (by OpenDNS) or user specified tag in incognito mode",
   "version": "0.1",
   "manifest_version": 2,
-
+  "options_page": "src/options.html",
+  
   /****************************************************************************
    *    Icons
    */
@@ -14,35 +15,30 @@
     "16": "icons/16.png",
     "19": "icons/19.png",
     "48": "icons/48.png",
-    "129": "icons/128.png"
+    "128": "icons/128.png"
   },
 
   /****************************************************************************
    *    Browser Action:
-   *    - http://developer.chrome.com/trunk/extensions/browserAction.html
    */
   "browser_action": {
-    "default_icon": "icons/19.png", // optional
-    "default_title": "[POPUP TITLE]",    // optional; shown in tooltip
-    "default_popup": "src/popup.html"    // optional
+    "default_icon": "icons/19.png"
   },
-
+  
   /****************************************************************************
-   *    Event Page:
-   *    - http://developer.chrome.com/trunk/extensions/event_pages.html
+   *    Background Page:
    */
-  "background": {
-    "persistent": false,
-    "scripts": [
-      "src/eventPage.js"
-    ]
+   "background": {
+     "scripts": [ "src/background.js" ]
   },
-
+   
   /****************************************************************************
    *    Permissions:
-   *    - https://developer.chrome.com/trunk/extensions/manifest.html#permissions
    */
   "permissions": [
-    "storage" // https://developer.chrome.com/trunk/extensions/storage.html
+    "storage",
+  	"tabs",
+  	"http://domain.opendns.com/*",
+  	"http://*/*"
   ]
 }
