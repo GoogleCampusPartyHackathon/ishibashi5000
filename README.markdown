@@ -1,7 +1,7 @@
 Porn*
 ===============================
 Ad-Networks, Facebook and your favorite hacker are tracking you? Who cares. Protect your 
-privacy where it really matters. At home. From your girlfiend!
+privacy where it really matters. At home. From your girlfriend!
 Porn* will do it for you. Automatically. It will check if a requested domain has an 
 OpenDNS-tag for pornographic content and if so will load the site in an incognito window 
 and delete the url from your history.
@@ -12,6 +12,9 @@ To-do:
 	- bug fixes
 	- check OpenDNS ToS!! -> alternative? 
 
+Known bugs:
+	- will trigger if domain is not tagged at all
+	
 License
 -------
 
