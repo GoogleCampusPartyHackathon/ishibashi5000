@@ -71,7 +71,6 @@ checkurl = function(tabId, tab, url) {
 			chrome.tabs.remove(tabId);
 			chrome.history.deleteUrl({url: url});
 		  });
-		  return true;
 	    }
 	  }
     }
